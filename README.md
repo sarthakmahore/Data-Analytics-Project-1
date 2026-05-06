@@ -1,48 +1,64 @@
-# Project Title: Cars Data Analysis
+# Project Title: Weather Data Analysis
 
 ## Project Overview
 
-In this project, you will work on real-world data analysis tasks using Python. The project involves performing data cleaning, filtering, and manipulation to extract meaningful insights from a dataset containing information about cars. Python's Pandas library is used extensively to accomplish these tasks.
+In this project, you will learn how to perform data analysis using Python. The project involves answering specific questions using a real-world weather dataset. Python commands are utilized to manipulate and analyze the data effectively, providing insights into various weather conditions.
 
 ## Dataset
 
-The dataset used in this project includes information about various car makes, their origins, weights, MPG (Miles Per Gallon), and more. The dataset is analyzed to answer specific questions related to car characteristics and performance.
+The dataset used in this project includes weather data with variables such as Wind Speed, Visibility, Pressure, and more. The dataset allows for extensive exploration and analysis of weather patterns.
 
 ## Key Objectives
 
-The following tasks are addressed in this project using Python:
+The following questions are addressed in this project using Python:
 
-1. **Instruction (For Data Cleaning):** Find all Null Values in the dataset. If there is any null value in any column, fill it with the mean of that column.
-2. **Question (Based on Value Counts):** Check what are the different types of 'Make' in the dataset and what is the count (occurrence) of each 'Make' in the data?
-3. **Instruction (Filtering):** Show all the records where 'Origin' is Asia or Europe.
-4. **Instruction (Removing unwanted records):** Remove all the records (rows) where 'Weight' is above 4000.
-5. **Instruction (Applying function on a column):** Increase all the values of the 'MPG_City' column by 3.
+1. **Find all the unique 'Wind Speed' values in the data.**
+2. **Find the number of times when the 'Weather is exactly Clear'.**
+3. **Find the number of times when the 'Wind Speed was exactly 4 km/h'.**
+4. **Find out all the Null Values in the data.**
+5. **Rename the column name 'Weather' of the dataframe to 'Weather Condition'.**
+6. **What is the mean 'Visibility'?**
+7. **What is the Standard Deviation of 'Pressure' in this data?**
+8. **What is the Variance of 'Relative Humidity' in this data?**
+9. **Find all instances when 'Snow' was recorded.**
+10. **Find all instances when 'Wind Speed is above 24' and 'Visibility is 25'.**
+11. **What is the Mean value of each column against each 'Weather Condition'?**
+12. **What is the Minimum & Maximum value of each column against each 'Weather Condition'?**
+13. **Show all the Records where Weather Condition is Fog.**
+14. **Find all instances when 'Weather is Clear' or 'Visibility is above 40'.**
+15. **Find all instances when:**
+    - 'Weather is Clear' and 'Relative Humidity is greater than 50' 
+    - or 'Visibility is above 40'
 
 ## Commands and Functions Used
 
-To perform these tasks, the following Python commands and functions were used:
+To answer these questions, the following Python commands and functions were used:
 
-* `import pandas as pd` - To import the Pandas library.
-* `pd.read_csv()` - To import the CSV file into the Jupyter notebook.
 * `head()` - Displays the first N rows in the data (default is 5).
 * `shape` - Shows the total number of rows and columns in the DataFrame.
-* `df.isnull().sum()` - Detects the missing values in each column of the DataFrame.
-* `fillna()` - Fills the null values in a column with a specified value, such as the mean.
-* `value_counts` - Shows all unique values in a column along with their counts. It can be applied to a single column only.
-* `isin()` - Filters the DataFrame to show all records that include particular elements.
-* `apply()` - Applies a function along any axis of the DataFrame.
+* `index` - Provides the index of the DataFrame.
+* `columns` - Lists the names of each column.
+* `dtypes` - Displays the data type of each column.
+* `unique()` - Shows all unique values in a column.
+* `nunique()` - Displays the total number of unique values in each column.
+* `count` - Counts the total number of non-null values in each column.
+* `value_counts` - Shows all unique values in a column along with their counts.
+* `info()` - Provides basic information about the DataFrame.
 
 ## How to Run
 
 1. Ensure you have Jupyter Notebook and the Pandas library installed.
-2. Open the `Cars_Data_Analysis.ipynb` file in Jupyter Notebook.
-3. Run the cells sequentially to perform the data cleaning, filtering, and analysis tasks.
+2. Open the `Weather_Data_Analysis.ipynb` file in Jupyter Notebook.
+3. Execute the cells sequentially to carry out the data analysis.
 
 ## Results
 
-Through this project, you will gain insights into car data by performing tasks like handling missing values, filtering data based on specific conditions, removing unwanted records, and applying functions to modify data. These tasks are fundamental in the data cleaning and preparation phase of data analysis.
+This project provided valuable insights into weather conditions, such as identifying unique wind speeds, analyzing weather patterns, and calculating statistical metrics like mean, variance, and standard deviation for different weather conditions.
 
 ## Conclusion
 
-The Cars Data Analysis project demonstrates the practical use of Python for data manipulation and analysis, focusing on data cleaning, filtering, and modification techniques. By completing this project, you will better understand how to prepare and analyze real-world datasets using Python.
+The Weather Data Analysis project demonstrated the practical application of Python for data manipulation and analysis, particularly in handling real-world datasets. By answering specific queries, the project showcased how data analysis can be utilized to extract meaningful information from raw data.
+
+
+
 
